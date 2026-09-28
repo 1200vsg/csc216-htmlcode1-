@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSC 216 HTML Lab 1 - Konami Server and eFootball players, skills, lists, tables, images, video and forms.">
+    <meta name="author" content="CSC 216 Student">
+    <title>KONAMI SERVER - eFootball</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        .details{
+            align-items: center;
+            text-align: center;
+            font-size: 18px;
+
+
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        .title {
+            text-align: center;
+            background-color: #222;
+            color: white;
+            padding: 20px;
+        }
+
+        .player-section {
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .disc-list {
+            list-style-type: disc;
+        }
+
+        .circle-list {
+            list-style-type: circle;
+        }
+
+        .square-list {
+            list-style-type: square;
+        }
+
+        .none-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse:collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid #aaa;
+        }
+
+        input, textarea, select, button {
+            margin: 7px 0;
+            padding: 8px;
+        }
+
+        textarea {
+            width: 90%;
+            max-width: 500px;
+        }
+
+        .images img {
+            width: 300px;
+            height: 180px;
+            object-fit: cover;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Main container for the CSC 216 Lab 1 eFootball website -->
+    <div class="container">
+        <div class="details">
+            <h1>NAME : MAURICE DENZEL</h1>
+            <h1>REG NUMBER : COM/3496/26</h1>
+        </div>
+
+
+        <div class="title">
+            <h1>KONAMI SERVER</h1>
+            <h2>THE eFOOTBALL DATABASE</h2>
+        </div>
+
+        <!-- Internal hyperlink navigation -->
+        <nav>
+            <p>
+                <a href="#players">Players</a> |
+                <a href="#lists">Lists</a> |
+                <a href="#table">Player Table</a> |
+                <a href="#form">Player Form</a>
+            </p>
+        </nav>
+
+        <!-- External hyperlink -->
+        <p>
+            Visit the
+            <a href="https://www.konami.com/efootball/en/" target="_blank">
+                official KONAMI eFootball website
+            </a>
+            for more information.
+        </p>
+
+        <!-- Paragraph and text formatting examples -->
+        <p id="players">
+            <strong>eFootball</strong> is a football game developed by KONAMI.<br>
+            Players can build their teams using different football stars,
+            legends and special cards. <i>Skill</i> and <em>teamwork</em>
+            are important when creating a competitive team.
+            <u>Build your dream squad</u> and compete against other players.
+        </p>
+
+        <p>
+            Example of subscript: H<sub>2</sub>O.
+            Example of superscript: eFootball<sup>2</sup>.
+        </p>
+
+        <hr>
+
+        <!-- Three differently colored div blocks -->
+        <div class="player-section" style="background-color: burlywood;">
+            <h2>Efootball Players</h2>
+            <p>The following players have been introduced in the database.</p>
+
+            <ul class="circle-list">
+                <li>Maradona</li>
+                <li>Pele</li>
+                <li>Gareth Bale</li>
+                <li>George Best</li>
+                <li>Del Piero</li>
+            </ul>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="player-section" style="background-color: lightgreen;">
+            <h3>Players of the <b>Week</b></h3>
+
+            <ol type="i">
+                <li>Yamal</li>
+                <li>Mbappe</li>
+                <li>Raphinha</li>
+                <li>Haaland</li>
+            </ol>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="player-section" style="background-color: dodgerblue;">
+            <h3>Player Descriptions</h3>
+
+            <dl>
+                <dt><strong>Ronaldinho</strong></dt>
+                <dd>Famous for his dribbling and creativity.</dd>
+
+                <dt><strong>Cristiano Ronaldo</strong></dt>
+                <dd>Known for powerful shooting and heading.</dd>
+
+                <dt><strong>Roberto Carlos</strong></dt>
+                <dd>Known for powerful shots and crossing.</dd>
+            </dl>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="player-section" style="background-color: rgb(61, 47, 18); color: white;">
+            <h3>Groups of players with the same <i>skills</i></h3>
+
+            <ol>
+                <li>
+                    <dl>
+                        <dt><strong>Bullet Headers</strong></dt>
+                        <dd><i>Players who are dangerous in the air.</i></dd>
+                    </dl>
+
+                    <ul class="square-list">
+                        <li>Cristiano Ronaldo</li>
+                        <li>Ruud Gullit</li>
+                        <li>Haaland</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <dl>
+                        <dt><strong>Cross Specialists</strong></dt>
+                        <dd><i>Players who can make accurate crosses.</i></dd>
+                    </dl>
+
+                    <ul class="disc-list">
+                        <li>Roberto Carlos</li>
+                        <li>Lionel Messi</li>
+                        <li>David Beckham</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <br>
+        <hr>
+
+        <!-- All six HTML heading tags -->
+        <section id="headings">
+            <h1>Heading 1 - KONAMI</h1>
+            <h2>Heading 2 - eFootball</h2>
+            <h3>Heading 3 - Players</h3>
+            <h4>Heading 4 - Legends</h4>
+            <h5>Heading 5 - Skills</h5>
+            <h6>Heading 6 - Database</h6>
+        </section>
+
+        <hr>
+
+        <!-- HTML entities and escape sequences -->
+        <section>
+            <h2>HTML Entities and Escape Sequences</h2>
+            <p>
+                Greater than: &gt; <br>
+                Less than: &lt; <br>
+                Ampersand: &amp; <br>
+                Double quotation mark: &quot; <br>
+                Apostrophe: &apos; <br>
+                Euro symbol: &euro; <br>
+                Copyright symbol: &copy; <br>
+                Non-breaking space: Konami&nbsp;Server
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Unordered lists using all required list-style-type values -->
+        <section id="lists">
+            <h2>Unordered List Styles</h2>
+
+            <h4>Disc</h4>
+            <ul class="disc-list">
+                <li>Attackers</li>
+                <li>Midfielders</li>
+                <li>Defenders</li>
+            </ul>
+
+            <h4>Circle</h4>
+            <ul class="circle-list">
+                <li>Legends</li>
+                <li>Epic Players</li>
+                <li>Highlight Players</li>
+                <li>Standard player</li>
+            </ul>
+
+            <h4>Square</h4>
+            <ul class="square-list">
+                <li>Dribblers</li>
+                <li>Passers</li>
+                <li>Finishers</li>
+            </ul>
+
+            <h4>None</h4>
+            <ul class="none-list">
+                <li>Konami</li>
+                <li>eFootball</li>
+                <li>Online Matches</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Ordered lists using all required type attributes -->
+        <section>
+            <h2>Ordered List Types</h2>
+
+            <h4>type="1"</h4>
+            <ol type="1">
+                <li>Maradona</li>
+                <li>Pele</li>
+                <li>Ronaldo</li>
+            </ol>
+
+            <h4>type="A"</h4>
+            <ol type="A">
+                <li>Attack</li>
+                <li>Midfield</li>
+                <li>Defense</li>
+            </ol>
+
+            <h4>type="a"</h4>
+            <ol type="a">
+                <li>Dribbling</li>
+                <li>Passing</li>
+                <li>Shooting</li>
+            </ol>
+
+            <h4>type="I"</h4>
+            <ol type="I">
+                <li>Legendary</li>
+                <li>Epic</li>
+                <li>Featured</li>
+            </ol>
+
+            <h4>type="i"</h4>
+            <ol type="i">
+                <li>Goalkeeper</li>
+                <li>Defender</li>
+                <li>Forward</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <!-- Images: one PNG and one JPG -->
+        <section class="images">
+            <h2>eFootball Images</h2>
+
+            <p>PNG image:</p>
+            <img src="images/Qsbbfie-wallpaper-png.png"
+                 alt="KONAMI eFootball PNG image">
+
+            <p>JPG image:</p>
+            <img src="images/konami.jpg"
+                 alt="Football stadium JPG image">
+        </section>
+
+        <hr>
+
+        <!-- Video section -->
+        <section>
+            <h2>eFootball Video</h2>
+            <p>Sample HTML5 video player for the eFootball server page:</p>
+
+            <iframe
+                width="600"
+                height="350"
+                src="https://www.youtube.com/embed/Ijen5UPuG6U"
+                title="eFootball Official Launch Trailer"
+                allowfullscreen>
+            </iframe>
+
+            <p>
+                The video element above demonstrates how a video is embedded in HTML.
+                An eFootball match video can be used as the source when available.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- Player table -->
+        <section id="table">
+            <h2>eFootball Player Table</h2>
+
+            <table>
+                <caption>Sample KONAMI eFootball Player Database</caption>
+                <tr>
+                    <th>Player</th>
+                    <th>Position</th>
+                    <th>Main Skill</th>
+                    <th>Rating</th>
+                </tr>
+                <tr>
+                    <td>Maradona</td>
+                    <td>AMF</td>
+                    <td>Dribbling</td>
+                    <td>98</td>
+                </tr>
+                <tr>
+                    <td>Cristiano Ronaldo</td>
+                    <td>CF</td>
+                    <td>Heading</td>
+                    <td>97</td>
+                </tr>
+                <tr>
+                    <td>Lionel Messi</td>
+                    <td>RWF</td>
+                    <td>Ball Control</td>
+                    <td>98</td>
+                </tr>
+                <tr>
+                    <td>Haaland</td>
+                    <td>CF</td>
+                    <td>Finishing</td>
+                    <td>96</td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- HTML form containing all required controls -->
+        <section id="form">
+            <h2>eFootball Player Registration Form</h2>
+
+            <form action="https://httpbin.org/post" method="post">
+
+                <label for="player-name">Player Name:</label><br>
+                <input type="text" id="player-name" name="player_name"
+                       placeholder="Enter your name" required>
+                <br><br>
+
+                <label for="comment">Why do you like eFootball?</label><br>
+                <textarea id="comment" name="comment" rows="5"
+                          placeholder="Write your answer here..."></textarea>
+                <br><br>
+
+                <p>Preferred player type:</p>
+
+                <input type="radio" id="legend" name="player_type" value="legend">
+                <label for="legend">Legend</label><br>
+
+                <input type="radio" id="epic" name="player_type" value="epic">
+                <label for="epic">Epic</label><br>
+
+                <input type="radio" id="featured" name="player_type" value="featured">
+                <label for="featured">Featured</label>
+
+                <p>Favourite skills:</p>
+
+                <input type="checkbox" id="dribbling" name="skills" value="dribbling">
+                <label for="dribbling">Dribbling</label><br>
+
+                <input type="checkbox" id="passing" name="skills" value="passing">
+                <label for="passing">Passing</label><br>
+
+                <input type="checkbox" id="shooting" name="skills" value="shooting">
+                <label for="shooting">Shooting</label><br>
+
+                <input type="checkbox" id="heading" name="skills" value="heading">
+                <label for="heading">Heading</label><br><br>
+
+                <label for="position">Preferred position:</label><br>
+                <select id="position" name="position">
+                    <option value="gk">Goalkeeper</option>
+                    <option value="defender">Defender</option>
+                    <option value="midfielder">Midfielder</option>
+                    <option value="forward">Forward</option>
+                </select>
+
+                <br><br>
+
+                <button type="submit">Submit Player Information</button>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 KONAMI Server - eFootball CSC 216 Lab 1</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
